@@ -209,14 +209,14 @@ $(function () {
             { ymd: "2017-05-04", title: "Item 5" }
         ]},
         methods :{
-            newsEditClick: function(e){  //修改new按鈕
+            newsEditClick: function(e){  //修改news按鈕
                 // this.newsList[e].title += "$";
                 currentIndex = e;
                 $("#newsModal").modal( { backdrop: "static" } );
                 newsModel.title=this.newsList[e].title;
                 newsModel.ymd=this.newsList[e].ymd;
             },
-            newsAddClick: function(){  //新增new按鈕
+            newsAddClick: function(){  //新增news按鈕
                 currentIndex = -1;
                 newsModel.title="";
                 newsModel.ymd="";
